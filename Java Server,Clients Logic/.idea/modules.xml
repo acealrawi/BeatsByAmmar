@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServerLogic.iml" filepath="$PROJECT_DIR$/.idea/modules/ServerLogic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServerLogic_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ServerLogic_main.iml" group="ServerLogic" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServerLogic_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ServerLogic_test.iml" group="ServerLogic" />
+    </modules>
+  </component>
+</project>
