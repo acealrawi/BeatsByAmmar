@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: Ammar.BeatsProto:BeatsProto:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/Ammar/BeatsProto/BeatsProto/1.0-SNAPSHOT/BeatsProto-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/Ammar/BeatsProto/BeatsProto/1.0-SNAPSHOT/BeatsProto-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/Ammar/BeatsProto/BeatsProto/1.0-SNAPSHOT/BeatsProto-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
