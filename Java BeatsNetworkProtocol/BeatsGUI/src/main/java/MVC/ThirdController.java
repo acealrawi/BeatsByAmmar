@@ -138,7 +138,7 @@ public class ThirdController extends Thread implements Initializable {
 
                 }
                 else{
-                    System.out.println("ipdate null");
+                    System.out.println("patient class is null");
                 }
 
             }

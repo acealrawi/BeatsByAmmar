@@ -19,6 +19,6 @@ public class ClientProtoHandler extends SimpleChannelInboundHandler<ProtoMessage
 
     public void exceptionCaught(ChannelHandlerContext channelHandlerContext,Throwable cause){
         System.out.println("cought something bad: "+cause.getMessage());
-//        cause.printStackTrace();
+
     }
 }

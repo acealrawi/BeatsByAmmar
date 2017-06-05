@@ -37,13 +37,13 @@ public class TestServer {
         try {
 
 
-            PatientManager.addPatient(1234, "paul ToLoveRu and overwight", 4);
-            PatientManager.addPatient(1235, "tycho mentally instable", 16);
-            PatientManager.addPatient(1236, "Japanse Otaku", 12);
-            PatientManager.addPatient(1237, "kevin chips in mijn jas", 20);
-            PatientManager.addPatient(1238, "Tom Asuna is my life", 5);
-            PatientManager.addPatient(1239, "Robin Hood", 27);
-            PatientManager.addPatient(1241, "Dave Keta", 21);
+            PatientManager.addPatient(1234, "Paul", 18);
+            PatientManager.addPatient(1235, "Tycho", 18);
+            PatientManager.addPatient(1236, "Ali", 20);
+            PatientManager.addPatient(1237, "kevin", 20);
+            PatientManager.addPatient(1238, "Tom", 20);
+            PatientManager.addPatient(1239, "Robin", 20);
+            PatientManager.addPatient(1241, "Dave", 21);
             TestServer test = new TestServer(8088);
             test.run();
             //only test

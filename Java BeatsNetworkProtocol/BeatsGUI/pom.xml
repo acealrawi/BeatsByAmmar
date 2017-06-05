@@ -10,8 +10,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>Ammar.BeatsClient</groupId>
-            <artifactId>BeatsClient</artifactId>
+            <groupId>Ammar.BeatsProto</groupId>
+            <artifactId>BeatsProto</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

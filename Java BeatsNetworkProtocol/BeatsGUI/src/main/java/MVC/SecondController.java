@@ -71,12 +71,10 @@ public class SecondController extends AbstractDataHandler implements Initializab
 
             Parent secondParent = FXMLLoader.load(getClass().getClassLoader().getResource("FxmlScreens/FirstScreen.fxml"));
             Stage secondStage = view.getStage();
-
             secondStage.setScene(new Scene(secondParent, 500, 350));
             secondStage.setTitle("Saxion hospital");
             secondStage.setResizable(false);
             secondStage.show();
-
 
         }catch (IOException io){
             io.printStackTrace();
@@ -93,17 +91,13 @@ public class SecondController extends AbstractDataHandler implements Initializab
         Platform.runLater(new Runnable() {
             public void run() {
                 if (patient != null) {
-                    System.out.println("not nullllll");
-                    System.out.println(patient.getAge());
                     NameLabel.setText(patient.getName());
                     AgeLabel.setText(String.valueOf(patient.getAge()));
                     PatientNumberLabel.setText(String.valueOf(patient.getPatientNumber()));
-
                 }
                 else{
-                    System.out.println("ipdate null");
+                    System.out.println("patient class is null");
                 }
-
             }
         });
     }

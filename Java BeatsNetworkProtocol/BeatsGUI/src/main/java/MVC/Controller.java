@@ -53,7 +53,7 @@ public class Controller extends AbstractDataHandler {
                     Patient.setPatient(patient);
                 }
             });
-
+            System.out.println(NumberInput.getText());
             Model.sendRequest(Integer.parseInt(NumberInput.getText()));
         }catch (Exception io){
             io.printStackTrace();
@@ -62,14 +62,4 @@ public class Controller extends AbstractDataHandler {
 
 
     }
-
-
-
-
-
-
-
-
-
-
 }
