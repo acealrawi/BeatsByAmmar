@@ -1,0 +1,5 @@
+rootProject.name = 'TheBeatsNetwork'
+include 'NetworkServer'
+findProject(':NetworkServer')?.name = 'TheBeatsNetwork'
+include 'NetworkClient'
+

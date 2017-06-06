@@ -1,0 +1,12 @@
+syntax = "proto3";
+package proto;
+
+message ProtoPatient{
+    uint32 patientNumber = 1;
+    string name=2;
+    uint32 age=3;
+    string gender=4;
+    string sport =5;
+    uint32 weight =6;
+
+}

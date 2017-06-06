@@ -1,0 +1,14 @@
+#background1 {
+    -fx-background-position: center;
+    -fx-background-color: 	#FFFFFF;
+    -fx-background-image: url('HospitalLogo.jpg');
+    -fx-background-repeat: stretch;
+}
+
+#background2 {
+    -fx-background-position: center;
+    -fx-background-color: 	#FFFFFF;
+    -fx-background-image: url('HospitalLogo2.jpg');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 350px 400px;
+}

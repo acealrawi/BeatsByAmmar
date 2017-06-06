@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkClient/NetworkClient.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkClient/NetworkClient.iml" group="NetworkClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkClient/NetworkClient_main.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkClient/NetworkClient_main.iml" group="NetworkClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkClient/NetworkClient_test.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkClient/NetworkClient_test.iml" group="NetworkClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TheBeatsNetwork.iml" filepath="$PROJECT_DIR$/.idea/modules/TheBeatsNetwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkServer/TheBeatsNetwork-TheBeatsNetwork.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkServer/TheBeatsNetwork-TheBeatsNetwork.iml" group="TheBeatsNetwork" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkServer/TheBeatsNetwork-TheBeatsNetwork_main.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkServer/TheBeatsNetwork-TheBeatsNetwork_main.iml" group="TheBeatsNetwork" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkServer/TheBeatsNetwork-TheBeatsNetwork_test.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkServer/TheBeatsNetwork-TheBeatsNetwork_test.iml" group="TheBeatsNetwork" />
+    </modules>
+  </component>
+</project>
