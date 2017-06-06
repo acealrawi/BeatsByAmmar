@@ -21,7 +21,7 @@ public class TestServer {
 
             ServerBootstrap bootstrap = new ServerBootstrap()
                     .group(boss,worker)
-                    .channel(NioServerSocketChannel.class)
+                    .channel(NioServerSocketChannel.class )
                     .childHandler(new TestServerInit());
             bootstrap.bind(port).sync().channel().closeFuture().sync();
 
