@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="background1"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" stylesheets="@../CSS/Background.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.Controller">
+   <children>
+      <Pane prefHeight="116.67" prefWidth="600.0">
+         <children>
+            <Label layoutX="42.0" layoutY="14.0" text="Enter your patient number here" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="116.67" prefWidth="200.0">
+         <children>
+            <TextField fx:id="NumberInput" layoutX="176.0" layoutY="46.0" onKeyTyped="#checkInput" promptText="Patient Number" />
+         </children>
+      </Pane>
+      <Pane prefHeight="116.67" prefWidth="200.0">
+         <children>
+            <Button fx:id="ContinueButton" layoutX="218.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleContinueButton" text="Continue" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
