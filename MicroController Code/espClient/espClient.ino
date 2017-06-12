@@ -8,10 +8,10 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "The Legend 27";
-const char* password = "";
+const char* ssid     = "esp8266";
+const char* password = "123456789";
 
-const char* host = "";
+const char* host = "145.76.117.154";
 
 void setup() {
   Serial.begin(115200);
@@ -44,7 +44,7 @@ void setup() {
 int value = 0;
 
 void loop() {
-  delay(5000);
+  //delay(5000);
   ++value;
 
   Serial.print("connecting to ");
@@ -62,15 +62,15 @@ void loop() {
 
   
   // This will send the request to the server
-  client.print(String("hi"));
+  client.print(analogRead(A0));
   unsigned long timeout = millis();
-  while (client.available() == 0) {
+  /*while (client.available() == 0) {
     if (millis() - timeout > 5000) {
       Serial.println(">>> Client Timeout !");
       client.stop();
       return;
     }
-  }
+  }*/
   
   // Read all the lines of the reply from server and print them to Serial
   while(client.available()){

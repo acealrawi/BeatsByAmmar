@@ -8,9 +8,9 @@
 #include <ESP8266mDNS.h>
 #include <ESP8266HTTPUpdateServer.h>
 
-const char* host = "esp8266-webupdate";
-const char* ssid = "";
-const char* password = "";
+const char* host = "";
+const char* ssid = "esp8266";
+const char* password = "123456789";
 
 ESP8266WebServer httpServer(80);
 ESP8266HTTPUpdateServer httpUpdater;
