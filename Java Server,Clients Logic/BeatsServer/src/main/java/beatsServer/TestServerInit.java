@@ -15,23 +15,19 @@ import proto.ProtoMessageOuterClass;
  * Created by Gebruiker on 5/12/2017.
  */
 public class TestServerInit extends ChannelInitializer<SocketChannel> {
+    /**
+     * In this class we add all the handlers and decoders that are going to be used by the server.
+     *
+     * @param ch
+     * @throws Exception
+     */
 
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
-//        pipeline.addLast("decoder",new StringDecoder());
-//        pipeline.addLast("encoder",new StringEncoder());
-//        pipeline.addLast("ProtoMessageDecoder", new ProtobufDecoder(ProtoMessageOuterClass.ProtoMessage.getDefaultInstance()));
-        pipeline.addLast("ProtoMessageEncoder", new ProtobufEncoder());
-//        pipeline.addLast("dynamic handler",new DynamicHandler());
-//        pipeline.addLast("string",new TestServerStringHandler());
-//        pipeline.addLast("Protohandler",new TestServerProtoHandler());
-//        pipeline.addLast("object",new ByteBufHandler());
-
-        //ByteArray
-//        pipeline.addLast("byte encder", new ByteArrayEncoder());
-        pipeline.addLast("byte decoder", new ByteArrayDecoder());
-        pipeline.addLast("byte array handler", new ByteArrayHandler());
+        pipeline.addLast("ProtoMessageEncoder", new ProtobufEncoder());// Encode outgoing protobuf messages to byteBuf
+        pipeline.addLast("ByteArrayDecoder", new ByteArrayDecoder()); // Decode incoming byteBuf to byte array
+        pipeline.addLast("ByteArrayHandler", new ByteArrayHandler()); // handles incoming byte arrays en outgoing protobuf messages
 
 
 

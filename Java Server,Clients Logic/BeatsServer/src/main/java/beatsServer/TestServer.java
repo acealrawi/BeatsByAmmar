@@ -24,7 +24,7 @@ public class TestServer {
                     .group(boss,worker)
                     .channel(NioServerSocketChannel.class)
                     .childHandler(new TestServerInit());
-            bootstrap.bind(port).sync().channel().closeFuture().sync();
+            bootstrap.bind(port).sync().channel().closeFuture().sync(); //bind the server to the device ip address and the chosen port.
 
         }
 
@@ -37,7 +37,7 @@ public class TestServer {
     public static void main(String[] args) {
         try {
 
-
+            //creates few patients
             PatientManager.addPatient(1234, "Paul", 18,"m",90, "E-sport");
             PatientManager.addPatient(1235, "Tycho", 18,"m",85, "E-sport");
             PatientManager.addPatient(1236, "Ali", 20,"m",75, "E-sport");

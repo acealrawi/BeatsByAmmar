@@ -9,7 +9,11 @@ import java.util.ArrayList;
  * Created by Gebruiker on 5/25/2017.
  */
 
-
+/***
+ * In this class two listeners are implemented
+ * The newDataListeners listen to Patient Proto Message
+ * The newSensorDataListener listen to Sensor Proto Message
+ */
 
 
 public abstract class AbstractDataHandler {
