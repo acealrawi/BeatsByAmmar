@@ -1,3 +1,4 @@
+proto\ProtoMessageOuterClass$Sensor$Builder.class
 proto\ProtoPatientOuterClass.class
 proto\ProtoMessageOuterClass$ProtoMessage.class
 proto\ProtoMessageOuterClass$PatientResponseOrBuilder.class
@@ -6,13 +7,16 @@ proto\ProtoPatientOuterClass$ProtoPatient$Builder.class
 protoManagers\MessageManager.class
 proto\ProtoMessageOuterClass$PatientResponse.class
 proto\ProtoMessageOuterClass$ProtoMessage$Builder.class
+proto\ProtoMessageOuterClass$SensorOrBuilder.class
 proto\ProtoMessageOuterClass$1.class
 proto\ProtoPatientOuterClass$ProtoPatient$1.class
 proto\ProtoPatientOuterClass$1.class
 proto\ProtoMessageOuterClass$PatientResponse$Builder.class
+proto\ProtoMessageOuterClass$Sensor$1.class
 proto\ProtoMessageOuterClass.class
 proto\ProtoMessageOuterClass$PatientRequest.class
 proto\ProtoMessageOuterClass$PatientRequestOrBuilder.class
+proto\ProtoMessageOuterClass$Sensor.class
 proto\ProtoMessageOuterClass$PatientRequest$Builder.class
 proto\ProtoMessageOuterClass$ProtoMessageOrBuilder.class
 protoManagers\PatientManager.class

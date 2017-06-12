@@ -16,87 +16,98 @@
     <favorites_list name="BeatsServer" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/DBConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2142#2143#0" expanded="true" />
-                <element signature="e#2168#2169#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/DAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1496737114897" expanded="true" signature="912:934" ph="SELECT * FRO... userinfo" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestServerInit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerInit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestServerProtoHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerProtoHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestServerStringHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerStringHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6808989">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="TestServer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="714">
+                  <caret line="49" column="14" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="51" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#373#374#0" expanded="false" />
+                    <element signature="e#405#406#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TestServerInit.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerInit.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="25" column="66" lean-forward="false" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DynamicHandler.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/DynamicHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+                  <folding>
+                    <element signature="e#1391#1392#0" expanded="false" />
+                    <element signature="e#1426#1427#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ByteArrayHandler.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/ByteArrayHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="211">
+                  <caret line="25" column="114" lean-forward="true" selection-start-line="25" selection-start-column="114" selection-end-line="25" selection-end-column="114" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TestServerProtoHandler.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerProtoHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TestServerStringHandler.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerStringHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="TestServerProtoHandler.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerProtoHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="41" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,14 +125,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/beatsServer/StringHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beatsServer/TestServerStringHandler.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/beatsServer/TestServerProtoHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beatsServer/TestServerInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beatsServer/ByteBufHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/beatsServer/TestServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beatsServer/DBSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beatsServer/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beatsServer/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beatsServer/DynamicHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beatsServer/TestServerStringHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beatsServer/TestServerProtoHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beatsServer/ByteArrayHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beatsServer/TestServerInit.java" />
       </list>
     </option>
   </component>
@@ -139,10 +150,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="916" />
+    <option name="width" value="1011" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -159,7 +169,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -169,6 +180,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BeatsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeatsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeatsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeatsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeatsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -200,8 +243,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,7 +253,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BeatsProto" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -388,6 +430,22 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command" show_console_on_std_err="false" show_console_on_std_out="false">
+      <parameters>
+        <option name="additionalArguments">
+          <list />
+        </option>
+        <option name="backtraceMode" value="2" />
+        <option name="channel" value="0" />
+        <option name="command" value="run" />
+        <option name="environmentVariables">
+          <map />
+        </option>
+        <option name="nocapture" value="true" />
+      </parameters>
+      <module />
       <method />
     </configuration>
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
@@ -674,36 +732,38 @@
       <workItem from="1496580471889" duration="3824000" />
       <workItem from="1496675065763" duration="897000" />
       <workItem from="1496676304562" duration="2134000" />
-      <workItem from="1496732899039" duration="9000" />
-      <workItem from="1496732939379" duration="766000" />
-      <workItem from="1496735239336" duration="1863000" />
-      <workItem from="1496740183166" duration="95000" />
+      <workItem from="1496914523659" duration="5856000" />
+      <workItem from="1497008809537" duration="3377000" />
+      <workItem from="1497085295542" duration="5354000" />
+      <workItem from="1497130560959" duration="4012000" />
+      <workItem from="1497178074733" duration="8006000" />
+      <workItem from="1497215173262" duration="3685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44200000" />
+    <option name="totallyTimeSpent" value="71757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="916" y="0" width="1011" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26344675" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32545045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2972973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3783784" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13541667" sideWeight="0.4960981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06414301" sideWeight="0.4960981" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -734,24 +794,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -764,7 +806,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -781,7 +825,8 @@
         <state relative-caret-position="391">
           <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -806,7 +851,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -823,7 +870,8 @@
         <state relative-caret-position="170">
           <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -848,7 +896,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -865,7 +915,8 @@
         <state relative-caret-position="51">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,7 +934,8 @@
         <state relative-caret-position="221">
           <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -900,7 +952,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -925,7 +979,8 @@
         <state relative-caret-position="102">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -934,7 +989,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -974,7 +1031,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -984,7 +1043,8 @@
         <state relative-caret-position="578">
           <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1009,7 +1069,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,7 +1080,8 @@
         <state relative-caret-position="493">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1043,7 +1106,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1052,7 +1117,8 @@
         <state relative-caret-position="323">
           <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1077,7 +1143,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,73 +1154,89 @@
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/StringHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerStringHandler.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="323">
+          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/ByteBufHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.10.Final/netty-all-4.1.10.Final.jar!/io/netty/channel/ChannelPipeline.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="714">
+          <caret line="49" column="14" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="51" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/DBConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerStringHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#2168#2169#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/DAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/DynamicHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="476">
+          <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1496737114897" expanded="true" signature="912:934" ph="SELECT * FRO... userinfo" />
+            <element signature="e#1391#1392#0" expanded="false" />
+            <element signature="e#1426#1427#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerProtoHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/ByteArrayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="25" column="114" lean-forward="true" selection-start-line="25" selection-start-column="114" selection-end-line="25" selection-end-column="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beatsServer/TestServerInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="272">
+          <caret line="25" column="66" lean-forward="false" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
           <folding />
         </state>
       </provider>

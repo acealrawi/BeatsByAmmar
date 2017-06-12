@@ -54,8 +54,8 @@ public class Controller extends AbstractDataHandler {
                 }
             });
 
-//            Model.sendRequest(Integer.parseInt(NumberInput.getText()));
-            Model.sendString("hi KOTLIN with love from ali: xXwaZZupXx");
+            Model.sendRequest(Integer.parseInt(NumberInput.getText()));
+//            Model.sendString(NumberInput.getText());
         }catch (Exception io){
             io.printStackTrace();
         }

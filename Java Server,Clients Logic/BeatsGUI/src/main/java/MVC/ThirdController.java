@@ -16,7 +16,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import proto.ProtoMessageOuterClass;
 import proto.ProtoPatientOuterClass;
+import sun.management.Sensor;
 
 import java.io.IOException;
 import java.net.URL;
@@ -124,6 +126,12 @@ public class ThirdController extends Thread implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
         updateThirdScreen(Patient.getPatient());
+        AbstractDataHandler.addSensorListener(new AbstractDataHandler.newSensorDataListener() {
+            public void newSensorData(ProtoMessageOuterClass.Sensor sensor) {
+                updateHeartRate(sensor);
+            }
+        });
+
 
     }
     public void updateThirdScreen(final ProtoPatientOuterClass.ProtoPatient patient){
@@ -138,11 +146,19 @@ public class ThirdController extends Thread implements Initializable {
 
                 }
                 else{
-                    System.out.println("ipdate null");
+                    System.out.println("third screen patient is null");
                 }
 
             }
         });
+    }
+    public void updateHeartRate(ProtoMessageOuterClass.Sensor sensor){
+        if (sensor != null){
+            heartRate.setText(String.valueOf(sensor.getValue()));
+        }
+        else{
+            System.out.println("heart rate is null");
+        }
     }
 
 }

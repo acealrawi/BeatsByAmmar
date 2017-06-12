@@ -45,10 +45,11 @@ public class Model {
     }
 
     public static void sendRequest(int number){
-        channel.writeAndFlush(MessageManager.createRequestMessage(number));
+        channel.writeAndFlush(MessageManager.createRequestMessage(number).toByteArray());
     }
     public static void sendString(String msg){
-        channel.writeAndFlush(msg);
+
+        channel.writeAndFlush(msg.getBytes());
     }
 
 

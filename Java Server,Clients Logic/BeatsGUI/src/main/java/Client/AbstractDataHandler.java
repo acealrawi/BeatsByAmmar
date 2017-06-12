@@ -15,14 +15,23 @@ import java.util.ArrayList;
 public abstract class AbstractDataHandler {
 
     private static ArrayList<newDataListener> listeners = new ArrayList<newDataListener>();
-
+    private static ArrayList<newSensorDataListener> sensorListeners = new ArrayList<newSensorDataListener>();
     public static void addListener(newDataListener data) {
         listeners.add(data);
+    }
+
+    public static void addSensorListener(newSensorDataListener sensorData) {
+        sensorListeners.add(sensorData);
     }
 
     public static void dataReceived(ProtoPatientOuterClass.ProtoPatient patient) {
         for (newDataListener rl : listeners)
             rl.newData(patient);
+    }
+    public static void sensorDataReceived(ProtoMessageOuterClass.Sensor sensor){
+        for (newSensorDataListener rl: sensorListeners){
+            rl.newSensorData(sensor);
+        }
     }
 
 
@@ -30,5 +39,8 @@ public abstract class AbstractDataHandler {
 
     public interface newDataListener{
         void newData(ProtoPatientOuterClass.ProtoPatient patient);
+    }
+    public interface newSensorDataListener{
+        void newSensorData(ProtoMessageOuterClass.Sensor sensor);
     }
 }

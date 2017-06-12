@@ -9,6 +9,7 @@ message ProtoMessage{
     oneof message{
         PatientRequest patientRequest = 1;
         PatientResponse patientResponse =2;
+        Sensor sensor =3;
     }
 
 }
@@ -21,4 +22,8 @@ message PatientRequest{
 message PatientResponse{
     ProtoPatient patient =1;
 
+}
+
+message Sensor{
+    uint32 value =1;
 }

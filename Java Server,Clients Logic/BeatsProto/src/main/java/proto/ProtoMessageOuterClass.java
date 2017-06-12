@@ -36,6 +36,15 @@ public final class ProtoMessageOuterClass {
      */
     proto.ProtoMessageOuterClass.PatientResponseOrBuilder getPatientResponseOrBuilder();
 
+    /**
+     * <code>.proto.Sensor sensor = 3;</code>
+     */
+    proto.ProtoMessageOuterClass.Sensor getSensor();
+    /**
+     * <code>.proto.Sensor sensor = 3;</code>
+     */
+    proto.ProtoMessageOuterClass.SensorOrBuilder getSensorOrBuilder();
+
     public proto.ProtoMessageOuterClass.ProtoMessage.MessageCase getMessageCase();
   }
   /**
@@ -105,6 +114,20 @@ public final class ProtoMessageOuterClass {
               messageCase_ = 2;
               break;
             }
+            case 26: {
+              proto.ProtoMessageOuterClass.Sensor.Builder subBuilder = null;
+              if (messageCase_ == 3) {
+                subBuilder = ((proto.ProtoMessageOuterClass.Sensor) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(proto.ProtoMessageOuterClass.Sensor.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((proto.ProtoMessageOuterClass.Sensor) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 3;
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -134,6 +157,7 @@ public final class ProtoMessageOuterClass {
         implements com.google.protobuf.Internal.EnumLite {
       PATIENTREQUEST(1),
       PATIENTRESPONSE(2),
+      SENSOR(3),
       MESSAGE_NOT_SET(0);
       private final int value;
       private MessageCase(int value) {
@@ -151,6 +175,7 @@ public final class ProtoMessageOuterClass {
         switch (value) {
           case 1: return PATIENTREQUEST;
           case 2: return PATIENTRESPONSE;
+          case 3: return SENSOR;
           case 0: return MESSAGE_NOT_SET;
           default: return null;
         }
@@ -206,6 +231,26 @@ public final class ProtoMessageOuterClass {
       return proto.ProtoMessageOuterClass.PatientResponse.getDefaultInstance();
     }
 
+    public static final int SENSOR_FIELD_NUMBER = 3;
+    /**
+     * <code>.proto.Sensor sensor = 3;</code>
+     */
+    public proto.ProtoMessageOuterClass.Sensor getSensor() {
+      if (messageCase_ == 3) {
+         return (proto.ProtoMessageOuterClass.Sensor) message_;
+      }
+      return proto.ProtoMessageOuterClass.Sensor.getDefaultInstance();
+    }
+    /**
+     * <code>.proto.Sensor sensor = 3;</code>
+     */
+    public proto.ProtoMessageOuterClass.SensorOrBuilder getSensorOrBuilder() {
+      if (messageCase_ == 3) {
+         return (proto.ProtoMessageOuterClass.Sensor) message_;
+      }
+      return proto.ProtoMessageOuterClass.Sensor.getDefaultInstance();
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -224,6 +269,9 @@ public final class ProtoMessageOuterClass {
       if (messageCase_ == 2) {
         output.writeMessage(2, (proto.ProtoMessageOuterClass.PatientResponse) message_);
       }
+      if (messageCase_ == 3) {
+        output.writeMessage(3, (proto.ProtoMessageOuterClass.Sensor) message_);
+      }
     }
 
     public int getSerializedSize() {
@@ -238,6 +286,10 @@ public final class ProtoMessageOuterClass {
       if (messageCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, (proto.ProtoMessageOuterClass.PatientResponse) message_);
+      }
+      if (messageCase_ == 3) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, (proto.ProtoMessageOuterClass.Sensor) message_);
       }
       memoizedSize = size;
       return size;
@@ -267,6 +319,10 @@ public final class ProtoMessageOuterClass {
           result = result && getPatientResponse()
               .equals(other.getPatientResponse());
           break;
+        case 3:
+          result = result && getSensor()
+              .equals(other.getSensor());
+          break;
         case 0:
         default:
       }
@@ -288,6 +344,10 @@ public final class ProtoMessageOuterClass {
         case 2:
           hash = (37 * hash) + PATIENTRESPONSE_FIELD_NUMBER;
           hash = (53 * hash) + getPatientResponse().hashCode();
+          break;
+        case 3:
+          hash = (37 * hash) + SENSOR_FIELD_NUMBER;
+          hash = (53 * hash) + getSensor().hashCode();
           break;
         case 0:
         default:
@@ -459,6 +519,13 @@ public final class ProtoMessageOuterClass {
             result.message_ = patientResponseBuilder_.build();
           }
         }
+        if (messageCase_ == 3) {
+          if (sensorBuilder_ == null) {
+            result.message_ = message_;
+          } else {
+            result.message_ = sensorBuilder_.build();
+          }
+        }
         result.messageCase_ = messageCase_;
         onBuilt();
         return result;
@@ -508,6 +575,10 @@ public final class ProtoMessageOuterClass {
           }
           case PATIENTRESPONSE: {
             mergePatientResponse(other.getPatientResponse());
+            break;
+          }
+          case SENSOR: {
+            mergeSensor(other.getSensor());
             break;
           }
           case MESSAGE_NOT_SET: {
@@ -813,6 +884,136 @@ public final class ProtoMessageOuterClass {
         messageCase_ = 2;
         onChanged();;
         return patientResponseBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          proto.ProtoMessageOuterClass.Sensor, proto.ProtoMessageOuterClass.Sensor.Builder, proto.ProtoMessageOuterClass.SensorOrBuilder> sensorBuilder_;
+      /**
+       * <code>.proto.Sensor sensor = 3;</code>
+       */
+      public proto.ProtoMessageOuterClass.Sensor getSensor() {
+        if (sensorBuilder_ == null) {
+          if (messageCase_ == 3) {
+            return (proto.ProtoMessageOuterClass.Sensor) message_;
+          }
+          return proto.ProtoMessageOuterClass.Sensor.getDefaultInstance();
+        } else {
+          if (messageCase_ == 3) {
+            return sensorBuilder_.getMessage();
+          }
+          return proto.ProtoMessageOuterClass.Sensor.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.proto.Sensor sensor = 3;</code>
+       */
+      public Builder setSensor(proto.ProtoMessageOuterClass.Sensor value) {
+        if (sensorBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          message_ = value;
+          onChanged();
+        } else {
+          sensorBuilder_.setMessage(value);
+        }
+        messageCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.proto.Sensor sensor = 3;</code>
+       */
+      public Builder setSensor(
+          proto.ProtoMessageOuterClass.Sensor.Builder builderForValue) {
+        if (sensorBuilder_ == null) {
+          message_ = builderForValue.build();
+          onChanged();
+        } else {
+          sensorBuilder_.setMessage(builderForValue.build());
+        }
+        messageCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.proto.Sensor sensor = 3;</code>
+       */
+      public Builder mergeSensor(proto.ProtoMessageOuterClass.Sensor value) {
+        if (sensorBuilder_ == null) {
+          if (messageCase_ == 3 &&
+              message_ != proto.ProtoMessageOuterClass.Sensor.getDefaultInstance()) {
+            message_ = proto.ProtoMessageOuterClass.Sensor.newBuilder((proto.ProtoMessageOuterClass.Sensor) message_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            message_ = value;
+          }
+          onChanged();
+        } else {
+          if (messageCase_ == 3) {
+            sensorBuilder_.mergeFrom(value);
+          }
+          sensorBuilder_.setMessage(value);
+        }
+        messageCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.proto.Sensor sensor = 3;</code>
+       */
+      public Builder clearSensor() {
+        if (sensorBuilder_ == null) {
+          if (messageCase_ == 3) {
+            messageCase_ = 0;
+            message_ = null;
+            onChanged();
+          }
+        } else {
+          if (messageCase_ == 3) {
+            messageCase_ = 0;
+            message_ = null;
+          }
+          sensorBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.proto.Sensor sensor = 3;</code>
+       */
+      public proto.ProtoMessageOuterClass.Sensor.Builder getSensorBuilder() {
+        return getSensorFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.proto.Sensor sensor = 3;</code>
+       */
+      public proto.ProtoMessageOuterClass.SensorOrBuilder getSensorOrBuilder() {
+        if ((messageCase_ == 3) && (sensorBuilder_ != null)) {
+          return sensorBuilder_.getMessageOrBuilder();
+        } else {
+          if (messageCase_ == 3) {
+            return (proto.ProtoMessageOuterClass.Sensor) message_;
+          }
+          return proto.ProtoMessageOuterClass.Sensor.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.proto.Sensor sensor = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          proto.ProtoMessageOuterClass.Sensor, proto.ProtoMessageOuterClass.Sensor.Builder, proto.ProtoMessageOuterClass.SensorOrBuilder> 
+          getSensorFieldBuilder() {
+        if (sensorBuilder_ == null) {
+          if (!(messageCase_ == 3)) {
+            message_ = proto.ProtoMessageOuterClass.Sensor.getDefaultInstance();
+          }
+          sensorBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              proto.ProtoMessageOuterClass.Sensor, proto.ProtoMessageOuterClass.Sensor.Builder, proto.ProtoMessageOuterClass.SensorOrBuilder>(
+                  (proto.ProtoMessageOuterClass.Sensor) message_,
+                  getParentForChildren(),
+                  isClean());
+          message_ = null;
+        }
+        messageCase_ = 3;
+        onChanged();;
+        return sensorBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1874,6 +2075,446 @@ public final class ProtoMessageOuterClass {
 
   }
 
+  public interface SensorOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:proto.Sensor)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>uint32 value = 1;</code>
+     */
+    int getValue();
+  }
+  /**
+   * Protobuf type {@code proto.Sensor}
+   */
+  public  static final class Sensor extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:proto.Sensor)
+      SensorOrBuilder {
+    // Use Sensor.newBuilder() to construct.
+    private Sensor(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Sensor() {
+      value_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private Sensor(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              value_ = input.readUInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return proto.ProtoMessageOuterClass.internal_static_proto_Sensor_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return proto.ProtoMessageOuterClass.internal_static_proto_Sensor_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              proto.ProtoMessageOuterClass.Sensor.class, proto.ProtoMessageOuterClass.Sensor.Builder.class);
+    }
+
+    public static final int VALUE_FIELD_NUMBER = 1;
+    private int value_;
+    /**
+     * <code>uint32 value = 1;</code>
+     */
+    public int getValue() {
+      return value_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (value_ != 0) {
+        output.writeUInt32(1, value_);
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (value_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, value_);
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof proto.ProtoMessageOuterClass.Sensor)) {
+        return super.equals(obj);
+      }
+      proto.ProtoMessageOuterClass.Sensor other = (proto.ProtoMessageOuterClass.Sensor) obj;
+
+      boolean result = true;
+      result = result && (getValue()
+          == other.getValue());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getValue();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static proto.ProtoMessageOuterClass.Sensor parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(proto.ProtoMessageOuterClass.Sensor prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code proto.Sensor}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:proto.Sensor)
+        proto.ProtoMessageOuterClass.SensorOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return proto.ProtoMessageOuterClass.internal_static_proto_Sensor_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return proto.ProtoMessageOuterClass.internal_static_proto_Sensor_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                proto.ProtoMessageOuterClass.Sensor.class, proto.ProtoMessageOuterClass.Sensor.Builder.class);
+      }
+
+      // Construct using proto.ProtoMessageOuterClass.Sensor.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        value_ = 0;
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return proto.ProtoMessageOuterClass.internal_static_proto_Sensor_descriptor;
+      }
+
+      public proto.ProtoMessageOuterClass.Sensor getDefaultInstanceForType() {
+        return proto.ProtoMessageOuterClass.Sensor.getDefaultInstance();
+      }
+
+      public proto.ProtoMessageOuterClass.Sensor build() {
+        proto.ProtoMessageOuterClass.Sensor result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public proto.ProtoMessageOuterClass.Sensor buildPartial() {
+        proto.ProtoMessageOuterClass.Sensor result = new proto.ProtoMessageOuterClass.Sensor(this);
+        result.value_ = value_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof proto.ProtoMessageOuterClass.Sensor) {
+          return mergeFrom((proto.ProtoMessageOuterClass.Sensor)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(proto.ProtoMessageOuterClass.Sensor other) {
+        if (other == proto.ProtoMessageOuterClass.Sensor.getDefaultInstance()) return this;
+        if (other.getValue() != 0) {
+          setValue(other.getValue());
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        proto.ProtoMessageOuterClass.Sensor parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (proto.ProtoMessageOuterClass.Sensor) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int value_ ;
+      /**
+       * <code>uint32 value = 1;</code>
+       */
+      public int getValue() {
+        return value_;
+      }
+      /**
+       * <code>uint32 value = 1;</code>
+       */
+      public Builder setValue(int value) {
+        
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 value = 1;</code>
+       */
+      public Builder clearValue() {
+        
+        value_ = 0;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:proto.Sensor)
+    }
+
+    // @@protoc_insertion_point(class_scope:proto.Sensor)
+    private static final proto.ProtoMessageOuterClass.Sensor DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new proto.ProtoMessageOuterClass.Sensor();
+    }
+
+    public static proto.ProtoMessageOuterClass.Sensor getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Sensor>
+        PARSER = new com.google.protobuf.AbstractParser<Sensor>() {
+      public Sensor parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new Sensor(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Sensor> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Sensor> getParserForType() {
+      return PARSER;
+    }
+
+    public proto.ProtoMessageOuterClass.Sensor getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_ProtoMessage_descriptor;
   private static final 
@@ -1889,6 +2530,11 @@ public final class ProtoMessageOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_proto_PatientResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_Sensor_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_Sensor_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1899,12 +2545,14 @@ public final class ProtoMessageOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022ProtoMessage.proto\022\005proto\032\022ProtoPatien" +
-      "t.proto\"}\n\014ProtoMessage\022/\n\016patientReques" +
-      "t\030\001 \001(\0132\025.proto.PatientRequestH\000\0221\n\017pati" +
-      "entResponse\030\002 \001(\0132\026.proto.PatientRespons" +
-      "eH\000B\t\n\007message\"\'\n\016PatientRequest\022\025\n\rpati" +
-      "entNumber\030\001 \001(\r\"7\n\017PatientResponse\022$\n\007pa" +
-      "tient\030\001 \001(\0132\023.proto.ProtoPatientb\006proto3"
+      "t.proto\"\236\001\n\014ProtoMessage\022/\n\016patientReque" +
+      "st\030\001 \001(\0132\025.proto.PatientRequestH\000\0221\n\017pat" +
+      "ientResponse\030\002 \001(\0132\026.proto.PatientRespon" +
+      "seH\000\022\037\n\006sensor\030\003 \001(\0132\r.proto.SensorH\000B\t\n" +
+      "\007message\"\'\n\016PatientRequest\022\025\n\rpatientNum" +
+      "ber\030\001 \001(\r\"7\n\017PatientResponse\022$\n\007patient\030" +
+      "\001 \001(\0132\023.proto.ProtoPatient\"\027\n\006Sensor\022\r\n\005" +
+      "value\030\001 \001(\rb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1924,7 +2572,7 @@ public final class ProtoMessageOuterClass {
     internal_static_proto_ProtoMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_ProtoMessage_descriptor,
-        new java.lang.String[] { "PatientRequest", "PatientResponse", "Message", });
+        new java.lang.String[] { "PatientRequest", "PatientResponse", "Sensor", "Message", });
     internal_static_proto_PatientRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_proto_PatientRequest_fieldAccessorTable = new
@@ -1937,6 +2585,12 @@ public final class ProtoMessageOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PatientResponse_descriptor,
         new java.lang.String[] { "Patient", });
+    internal_static_proto_Sensor_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_proto_Sensor_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_Sensor_descriptor,
+        new java.lang.String[] { "Value", });
     proto.ProtoPatientOuterClass.getDescriptor();
   }
 

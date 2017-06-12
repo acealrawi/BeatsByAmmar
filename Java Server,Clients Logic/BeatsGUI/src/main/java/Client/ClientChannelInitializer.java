@@ -2,6 +2,7 @@ package Client;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
+import io.netty.handler.codec.bytes.ByteArrayEncoder;
 import io.netty.handler.codec.protobuf.ProtobufDecoder;
 import io.netty.handler.codec.protobuf.ProtobufEncoder;
 import io.netty.handler.codec.string.StringDecoder;
@@ -14,10 +15,12 @@ import proto.ProtoMessageOuterClass.ProtoMessage;
 public class ClientChannelInitializer extends ChannelInitializer<SocketChannel> {
     protected void initChannel(SocketChannel socketChannel) throws Exception {
 //        socketChannel.pipeline().addLast("protoEncoder",new ProtobufEncoder());
-//        socketChannel.pipeline().addLast("protoDecoder",new ProtobufDecoder(ProtoMessage.getDefaultInstance()));
-        socketChannel.pipeline().addLast("string encoder", new StringEncoder());
-        socketChannel.pipeline().addLast("string decoder",new StringDecoder());
-        socketChannel.pipeline().addLast("ClientStringHanlder", new ClientStringHandler());
-//        socketChannel.pipeline().addLast("clientHandler",new ClientProtoHandler());
+        socketChannel.pipeline().addLast("ByteArrayEncoder", new ByteArrayEncoder());
+        socketChannel.pipeline().addLast("protoDecoder",new ProtobufDecoder(ProtoMessage.getDefaultInstance()));
+//        socketChannel.pipeline().addLast("string encoder", new StringEncoder());
+//        socketChannel.pipeline().addLast("string decoder",new StringDecoder());
+//        socketChannel.pipeline().addLast("ClientStringHanlder", new ClientStringHandler());
+        socketChannel.pipeline().addLast("clientHandler",new ClientProtoHandler());
+
     }
 }

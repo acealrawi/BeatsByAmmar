@@ -24,6 +24,14 @@ public class MessageManager {
         return message.build();
     }
 
+    public static ProtoMessage createSensorMessage(int sensorValue){
+        Sensor.Builder sensor = Sensor.newBuilder();
+        sensor.setValue(sensorValue);
+        ProtoMessage.Builder message = ProtoMessage.newBuilder();
+        message.setSensor(sensor.build());
+        return message.build();
+    }
+
     //This method process incoming request from the client.
     public static void requestProcessingModule(ChannelHandlerContext ctx, ProtoMessage message){
         //extract the patientNumber from the request
@@ -40,6 +48,9 @@ public class MessageManager {
     }
     public static ProtoPatient responseProcessingModule(ProtoMessage message){
         return message.getPatientResponse().getPatient();
+    }
 
+    public static Sensor sensorProcessingModule(ProtoMessage message){
+        return message.getSensor();
     }
 }
