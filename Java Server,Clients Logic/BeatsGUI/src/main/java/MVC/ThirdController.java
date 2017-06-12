@@ -40,7 +40,7 @@ public class ThirdController extends Thread implements Initializable {
     private Label gender;
 
     @FXML
-    private LineChart<?, ?> heartGraph;
+    private LineChart<String, Double> heartGraph;
 
     @FXML
     private VBox background3;
@@ -60,11 +60,14 @@ public class ThirdController extends Thread implements Initializable {
     @FXML
     private Label age;
 
-
+    XYChart.Series<String, Double> series = new XYChart.Series<String, Double>();
+    int chartIndex = 0;
 
     @FXML
     void handleMouse() {
         new ThirdController().start();
+
+
 
         heartRate.setText("75");
         maxField.setText("Max: 90");
@@ -77,7 +80,7 @@ public class ThirdController extends Thread implements Initializable {
         number.setText("1234567");
         weight.setText("85");
 
-        XYChart.Series<String, Double> series = new XYChart.Series<String, Double>();
+
 
         heartGraph.setLegendVisible(false);
 
@@ -104,7 +107,8 @@ public class ThirdController extends Thread implements Initializable {
                 series.getData().add(new XYChart.Data(Integer.toString(index), 25));
             }
         }
-//        heartGraph.getData().add(series);
+
+        //heartGraph.getData().add(series);
 
     }
 
@@ -155,10 +159,15 @@ public class ThirdController extends Thread implements Initializable {
     public void updateHeartRate(ProtoMessageOuterClass.Sensor sensor){
         if (sensor != null){
             heartRate.setText(String.valueOf(sensor.getValue()));
+
         }
         else{
             System.out.println("heart rate is null");
         }
+
+        series.getData().add(new XYChart.Data(Integer.toString(chartIndex), sensor.getValue()));
+        heartGraph.getData().removeAll();
+        heartGraph.getData().add(series);
     }
 
 }

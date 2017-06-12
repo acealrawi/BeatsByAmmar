@@ -2,6 +2,7 @@
   <library name="Maven: Ammar.BeatsProto:BeatsProto2:1.0-SNAPSHOT">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/Ammar/BeatsProto/BeatsProto2/1.0-SNAPSHOT/BeatsProto2-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/BeatsProto.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/Ammar/BeatsProto/BeatsProto2/1.0-SNAPSHOT/BeatsProto2-1.0-SNAPSHOT-javadoc.jar!/" />
