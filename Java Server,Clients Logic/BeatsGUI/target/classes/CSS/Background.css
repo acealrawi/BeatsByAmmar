@@ -12,3 +12,10 @@
     -fx-background-repeat: stretch;
     -fx-background-size: 350px 400px;
 }
+#settingButton{
+    -fx-background-position: center;
+    -fx-background-color: 	#FFFFFF;
+    -fx-background-image: url('settingIcon.jpeg');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 40px 40px;
+}

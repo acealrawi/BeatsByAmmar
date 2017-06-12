@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox id="background1"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" stylesheets="@../CSS/Background.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.Controller">
+<VBox id="background1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" stylesheets="@../CSS/Background.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.Controller">
    <children>
       <Pane prefHeight="116.67" prefWidth="600.0">
          <children>
@@ -16,6 +16,11 @@
                   <Font size="30.0" />
                </font>
             </Label>
+            <Pane layoutX="336.0" layoutY="25.0" prefHeight="57.0" prefWidth="86.0">
+               <children>
+                  <Button fx:id="settingButton" layoutX="31.0" layoutY="16.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" />
+               </children>
+            </Pane>
          </children>
       </Pane>
       <Pane prefHeight="116.67" prefWidth="200.0">
