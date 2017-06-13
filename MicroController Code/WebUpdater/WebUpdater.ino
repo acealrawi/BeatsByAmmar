@@ -8,7 +8,7 @@
 #include <ESP8266mDNS.h>
 #include <ESP8266HTTPUpdateServer.h>
 
-const char* host = "";
+const char* host = "espwifi";
 const char* ssid = "esp8266";
 const char* password = "123456789";
 
