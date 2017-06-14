@@ -15,11 +15,8 @@ import proto.ProtoMessageOuterClass;
  * Created by Gebruiker on 5/12/2017.
  */
 public class TestServerInit extends ChannelInitializer<SocketChannel> {
-    /**
+    /***
      * In this class we add all the handlers and decoders that are going to be used by the server.
-     *
-     * @param ch
-     * @throws Exception
      */
 
     @Override
@@ -28,8 +25,5 @@ public class TestServerInit extends ChannelInitializer<SocketChannel> {
         pipeline.addLast("ProtoMessageEncoder", new ProtobufEncoder());// Encode outgoing protobuf messages to byteBuf
         pipeline.addLast("ByteArrayDecoder", new ByteArrayDecoder()); // Decode incoming byteBuf to byte array
         pipeline.addLast("ByteArrayHandler", new ByteArrayHandler()); // handles incoming byte arrays en outgoing protobuf messages
-
-
-
     }
 }

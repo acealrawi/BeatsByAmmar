@@ -23,11 +23,11 @@ import protoManagers.MessageManager;
 public class ByteArrayHandler extends SimpleChannelInboundHandler<byte[]> {
     public static ChannelGroup channels= new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, byte[] bytes) throws Exception {
-        System.out.println(bytes.length);
+//        System.out.println(bytes.length);
 
 //        if (ProtoMessage.parseFrom(bytes))
 
-        System.out.println(bytes[0]);
+//        System.out.println(bytes[0]);
         if (bytes[0]==10){
             System.out.println("requested: "+ProtoMessageOuterClass.ProtoMessage.parseFrom(bytes).getPatientRequest().getPatientNumber());
             MessageManager.requestProcessingModule(channelHandlerContext,ProtoMessageOuterClass.ProtoMessage.parseFrom(bytes));//process the request and also creates a response and send it using the channelHandlerContext.

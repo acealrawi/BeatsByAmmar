@@ -159,15 +159,16 @@ public class ThirdController extends Thread implements Initializable {
     public void updateHeartRate(ProtoMessageOuterClass.Sensor sensor){
         if (sensor != null){
             heartRate.setText(String.valueOf(sensor.getValue()));
+            series.getData().add(new XYChart.Data(Integer.toString(chartIndex), sensor.getValue()));
+            heartGraph.getData().removeAll();
+            heartGraph.getData().add(series);
 
         }
         else{
             System.out.println("heart rate is null");
         }
 
-        series.getData().add(new XYChart.Data(Integer.toString(chartIndex), sensor.getValue()));
-        heartGraph.getData().removeAll();
-        heartGraph.getData().add(series);
+
     }
 
 }
