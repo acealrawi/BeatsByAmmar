@@ -8,13 +8,22 @@ Author:	paulr
 #include <Wire.h>
 #include "SSD1306.h"
 #include <Average.h>
+#include <WiFiClient.h>
+#include <ESP8266WebServer.h>
+#include <ESP8266mDNS.h>
+#include <ESP8266HTTPUpdateServer.h>
 
 #define sleepDelay 60 //Defines time in seconds after last heartbeat before esp goes to sleep
+
+
 
 const char* ssid = "esp8266";		//network name
 const char* password = "123456789";	//network password
 const char* host = "145.76.117.154";//ip of tcp server
 #define port 8088
+
+ESP8266WebServer httpServer(80);
+ESP8266HTTPUpdateServer httpUpdater;
 
 #define threshold 600
 #define debounce 300
@@ -36,6 +45,13 @@ void setup() {
 	WiFi.mode(WIFI_STA);
 	WiFi.begin(ssid, password);	//Start wifi connection
 	while (WiFi.status() != WL_CONNECTED) delay(500);
+  MDNS.begin(host);
+  httpUpdater.setup(&httpServer);
+  httpServer.begin();
+
+  MDNS.addService("http", "tcp", 80);
+  Serial.printf("HTTPUpdateServer ready! Open http://%s.local/update in your browser\n", host);
+  
 	delay(500);
 	digitalWrite(RSTPIN, HIGH);
 	display.init();
@@ -44,6 +60,7 @@ void setup() {
 
 // the loop function runs over and over again until power down or reset
 void loop() {
+  httpServer.handleClient();
 	WiFiClient client;
 	client.connect(host, port);		//ESP connects to tcp server
 	client.print(analogRead(A0));	//ESP sends analogValue of the sensor to tcp server
