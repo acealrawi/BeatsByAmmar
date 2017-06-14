@@ -82,9 +82,7 @@ public class ThirdController extends Thread implements Initializable {
 
 
 
-        heartGraph.setLegendVisible(false);
 
-        heartGraph.setCreateSymbols(false);
         for(int index = 0; index < 60; index++){
             if(index < 9){
                 series.getData().add(new XYChart.Data(Integer.toString(index), 25));
@@ -129,6 +127,9 @@ public class ThirdController extends Thread implements Initializable {
     }
 
     public void initialize(URL location, ResourceBundle resources) {
+        heartGraph.setLegendVisible(false);
+
+        heartGraph.setCreateSymbols(false);
         updateThirdScreen(Patient.getPatient());
         AbstractDataHandler.addSensorListener(new AbstractDataHandler.newSensorDataListener() {
             public void newSensorData(ProtoMessageOuterClass.Sensor sensor) {
@@ -156,17 +157,27 @@ public class ThirdController extends Thread implements Initializable {
             }
         });
     }
-    public void updateHeartRate(ProtoMessageOuterClass.Sensor sensor){
-        if (sensor != null){
-            heartRate.setText(String.valueOf(sensor.getValue()));
-            series.getData().add(new XYChart.Data(Integer.toString(chartIndex), sensor.getValue()));
-            heartGraph.getData().removeAll();
-            heartGraph.getData().add(series);
+    public void updateHeartRate(final ProtoMessageOuterClass.Sensor sensor){
 
-        }
-        else{
-            System.out.println("heart rate is null");
-        }
+            Platform.runLater(new Runnable() {
+                public void run() {
+                    if (sensor!=null){
+                        series.getData().add(new XYChart.Data(Integer.toString(chartIndex), sensor.getValue()));
+                        if(chartIndex == 0){
+                            heartGraph.getData().add(series);
+                        }
+                        chartIndex++;
+
+                    }
+                    else{
+                        System.out.println("heart rate is null");
+                    }
+                }
+            });
+            //heartRate.setText(String.valueOf(sensor.getValue()));
+
+
+
 
 
     }
