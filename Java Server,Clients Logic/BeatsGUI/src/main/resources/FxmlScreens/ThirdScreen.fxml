@@ -20,7 +20,7 @@
                 <CategoryAxis label="Time" side="BOTTOM" />
               </xAxis>
               <yAxis>
-                <NumberAxis label="Rate" side="LEFT" upperBound="200.0" />
+                <NumberAxis autoRanging="false" label="Rate" side="LEFT" upperBound="1050.0" />
               </yAxis>
             </LineChart>
          </children></Pane>
@@ -29,7 +29,7 @@
             <Pane prefHeight="200.0" prefWidth="400.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5e0cf" height="100.0" layoutX="110.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
-                  <TextField fx:id="heartRate" editable="false" layoutX="115.0" layoutY="205.0" onMouseClicked="#handleMouse" prefHeight="90.0" prefWidth="170.0" style="-fx-background-color: #c5e0cf;" />
+                  <TextField fx:id="heartRate" cacheShape="false" editable="false" layoutX="115.0" layoutY="205.0" onMouseClicked="#handleMouse" prefHeight="90.0" prefWidth="170.0" style="-fx-background-color: #c5e0cf;" />
                </children>
             </Pane>
             <Pane prefHeight="400.0" prefWidth="400.0">

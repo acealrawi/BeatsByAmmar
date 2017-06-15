@@ -14,13 +14,10 @@ import proto.ProtoMessageOuterClass.ProtoMessage;
  */
 public class ClientChannelInitializer extends ChannelInitializer<SocketChannel> {
     protected void initChannel(SocketChannel socketChannel) throws Exception {
-//        socketChannel.pipeline().addLast("protoEncoder",new ProtobufEncoder());
-        socketChannel.pipeline().addLast("ByteArrayEncoder", new ByteArrayEncoder());
-        socketChannel.pipeline().addLast("protoDecoder",new ProtobufDecoder(ProtoMessage.getDefaultInstance()));
-//        socketChannel.pipeline().addLast("string encoder", new StringEncoder());
-//        socketChannel.pipeline().addLast("string decoder",new StringDecoder());
-//        socketChannel.pipeline().addLast("ClientStringHanlder", new ClientStringHandler());
-        socketChannel.pipeline().addLast("clientHandler",new ClientProtoHandler());
+
+        socketChannel.pipeline().addLast("ByteArrayEncoder", new ByteArrayEncoder());// encode outgoing ByteArray data
+        socketChannel.pipeline().addLast("protoDecoder",new ProtobufDecoder(ProtoMessage.getDefaultInstance())); //decode incoming protobuf messages
+        socketChannel.pipeline().addLast("clientHandler",new ClientProtoHandler());// handles incoming protobuf messages.
 
     }
 }

@@ -2,11 +2,13 @@ package MVC;
 
 import Client.AbstractDataHandler;
 import Client.Patient;
+import com.sun.org.apache.xml.internal.security.utils.JavaUtils;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
@@ -22,6 +24,7 @@ import sun.management.Sensor;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.Instant;
 import java.util.ResourceBundle;
 
 /**
@@ -62,6 +65,11 @@ public class ThirdController extends Thread implements Initializable {
 
     XYChart.Series<String, Double> series = new XYChart.Series<String, Double>();
     int chartIndex = 0;
+    int[] arr = new int[10];
+    int x = 0;
+    int sum = 0;
+    long time = 0;
+    long time2 = 0;
 
     @FXML
     void handleMouse() {
@@ -128,7 +136,6 @@ public class ThirdController extends Thread implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
         heartGraph.setLegendVisible(false);
-
         heartGraph.setCreateSymbols(false);
         updateThirdScreen(Patient.getPatient());
         AbstractDataHandler.addSensorListener(new AbstractDataHandler.newSensorDataListener() {
@@ -162,12 +169,36 @@ public class ThirdController extends Thread implements Initializable {
             Platform.runLater(new Runnable() {
                 public void run() {
                     if (sensor!=null){
-                        series.getData().add(new XYChart.Data(Integer.toString(chartIndex), sensor.getValue()));
-                        if(chartIndex == 0){
-                            heartGraph.getData().add(series);
-                        }
-                        chartIndex++;
+                        int max = 0;
+                        if(x < 10){
+                            if(sensor.getValue() > max){
+                                max = sensor.getValue();
+                                time = System.nanoTime();
+                            }
+                            arr[x] = sensor.getValue();
+                            x++;
+                            sum += sensor.getValue();
 
+
+
+                        }else {
+                            if (time2 == 0) {
+                                heartGraph.getData().add(series);
+                            } else {
+                                long difference = time - time2;
+                                heartRate.setText(Long.toString(difference));
+                            }
+                            time2 = time;
+                                series.getData().add(new XYChart.Data(Integer.toString(chartIndex), (sum / 10)));
+                                if (chartIndex > 60) {
+                                    series.getData().removeAll();
+                                    chartIndex = 0;
+                                }
+
+                                chartIndex++;
+                                sum = 0;
+                                x = 0;
+                            }
                     }
                     else{
                         System.out.println("heart rate is null");
@@ -177,6 +208,7 @@ public class ThirdController extends Thread implements Initializable {
             //heartRate.setText(String.valueOf(sensor.getValue()));
 
 
+        System.out.println("Size of array is " + series.getData().size());
 
 
 

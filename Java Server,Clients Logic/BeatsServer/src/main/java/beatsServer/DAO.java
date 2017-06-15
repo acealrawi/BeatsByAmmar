@@ -1,8 +1,5 @@
 package beatsServer;
 
-/**
- * Created by Tycho on 6-6-2017.
- */
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -23,16 +20,16 @@ public class DAO {
     }
 
     public ArrayList<String> getInfo(String column) { //
-        ArrayList<String> cities = new ArrayList<String>();
+        ArrayList<String> users = new ArrayList<String>();
         try{
             // Execute the query
-            PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM userinfo" );;
+            PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM userinfo" );
             ResultSet rs = pstmt.executeQuery();
 
             // Loop through the result set
             while( rs.next())
-                cities.add(rs.getString(column) ) ;
+                users.add(rs.getString(column) ) ;
         }catch( SQLException se ) { se.printStackTrace(); }
-        return cities;
+        return users;
     }
 }

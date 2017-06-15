@@ -39,20 +39,16 @@ public class TestServer {
         try {
 
             //creates few patients
-            PatientManager.addPatient(1234, "Paul", 18,"m",90, "E-sport");
-            PatientManager.addPatient(1235, "Tycho", 18,"m",85, "E-sport");
-            PatientManager.addPatient(1236, "Ali", 20,"m",75, "E-sport");
-            PatientManager.addPatient(1237, "kevin", 20,"m",65, "E-sport");
-            PatientManager.addPatient(1238, "Tom", 20,"m",70, "E-sport");
-            PatientManager.addPatient(1239, "Robin", 20,"m",60, "E-sport");
-            PatientManager.addPatient(1241, "Dave", 21,"m",85, "E-sport");
+            PatientManager.addPatient(1234, "Paul", 18,"M",90, "E-sport");
+            PatientManager.addPatient(1235, "Tycho", 18,"M",85, "E-sport");
+            PatientManager.addPatient(1236, "Ali", 20,"M",75, "E-sport");
+            PatientManager.addPatient(1237, "kevin", 20,"M",65, "E-sport");
+            PatientManager.addPatient(1238, "Tom", 20,"M",70, "E-sport");
+            PatientManager.addPatient(1239, "Robin", 20,"M",60, "E-sport");
+            PatientManager.addPatient(1241, "Dave", 21,"M",85, "Fitness");
             TestServer test = new TestServer(8088);
             test.run();
-//            while (true) {
-//                TestServerProtoHandler.channel.writeAndFlush(MessageManager.createSensorMessage(12));
-//            }
-            //only test
-            //MessageManager.requestProcessingModule(MessageManager.createRequestMessage(1235));
+
         }catch (InterruptedException e){
             System.out.println(e.getCause());
         }

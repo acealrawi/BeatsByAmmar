@@ -33,7 +33,7 @@ public class DBConnection{
         try {
             Properties props = new Properties();
             try {
-                FileInputStream in = new FileInputStream("~/home/ali/IdeaProjects/mysqlweek7/src/database.properties");
+                FileInputStream in = new FileInputStream("D:\\Github\\BeatsByAmmar\\Java Server,Clients Logic\\BeatsServer\\src\\main\\java\\beatsServer\\database.properties");
                 props.load(in);
                 in.close();
                 fileloaded = true;
