@@ -195,6 +195,7 @@ public class ThirdController extends Thread implements Initializable {
                                     chartIndex = 0;
                                 }
 
+
                                 chartIndex++;
                                 sum = 0;
                                 x = 0;

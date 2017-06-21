@@ -21,7 +21,7 @@ import java.util.Scanner;
 
 public class Model {
 
-    private static String host = "localhost";
+    private static String host = "145.76.242.143";
     private static int port = 8088;
     private static EventLoopGroup group = new NioEventLoopGroup();
     private static Channel channel;
